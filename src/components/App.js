@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import styles from "./App.module.css";
 import picture from "../assets/Picture.png";
 import photo from "../assets/Photo.png";
@@ -15,6 +15,7 @@ import ccSS from "../assets/ccSS.png";
 import inclusifySS from "../assets/inclusifySS.png";
 import scSS from "../assets/scSS.png";
 import Project from "./Project";
+import landscape from "../assets/staticGround.png";
 
 function App() {
   let skills = [
@@ -156,6 +157,7 @@ function App() {
                   icon={projects[i].icon}
                   link={projects[i].link}
                   pic={projects[i].pic}
+                  index={i}
                 />
               </div>
             );
@@ -164,9 +166,62 @@ function App() {
       </div>
       <div className={styles.resume}>
         <h1>Want to know more about me?</h1>
-        <a href="Udy Ding Resume 2021 copy.pdf" target="_blank">
+        <a
+          href="Udy Ding Resume 2021 copy.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Take a copy of my resume!</button>
         </a>
+      </div>
+      <div className={styles.contactFooterWrapper}>
+        <div className={styles.contact}>
+          <h1>Or... we could get in touch!</h1>
+          <form>
+            <div className={styles.input}>
+              <input type="text" id="name" placeholder="Your name," />
+              <input type="email" id="email" placeholder="email, and" />
+              <textarea id="message" placeholder="a message." />
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+        <div className={styles.footer}>
+          <div
+            style={{
+              fontWeight: 400,
+              fontSize: "16px",
+              color: "#3E4E50",
+            }}
+          >
+            Designed and developed by Udy Ding © 2021
+          </div>
+          <div className={styles.links}>
+            <a
+              href="https://ca.linkedin.com/in/udy-ding"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            <br></br>
+            <a
+              href="http://github.com/udyding"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Github
+            </a>
+            <br></br>
+            <a
+              href="https://devpost.com/udyding"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Devpost
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Project.module.css";
 
 export default function Project(props) {
-  const { name, description, tools, icon, link, pic } = props;
-  const variant = name === "Inclusify" ? "right" : "left";
+  const { name, description, tools, icon, link, pic, index } = props;
+  const variant = index % 2 === 0 ? "right" : "left";
   return (
     <div
       className={`${styles.container} ${
