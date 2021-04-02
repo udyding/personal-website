@@ -15,7 +15,10 @@ import ccSS from "../assets/ccSS.png";
 import inclusifySS from "../assets/inclusifySS.png";
 import scSS from "../assets/scSS.png";
 import Project from "./Project";
-import landscape from "../assets/staticGround.png";
+import balloon from "../assets/Balloon.png";
+import truck from "../assets/truck.png";
+import redCar from "../assets/redCar.png";
+import pinkCar from "../assets/pinkCar.png";
 
 function App() {
   let skills = [
@@ -177,6 +180,7 @@ function App() {
       <div className={styles.contactFooterWrapper}>
         <div className={styles.contact}>
           <h1>Or... we could get in touch!</h1>
+          <img className={styles.balloon} src={balloon} alt="balloon" />
           <form>
             <div className={styles.input}>
               <input type="text" id="name" placeholder="Your name," />
@@ -185,7 +189,26 @@ function App() {
               <input type="submit" value="Send" />
             </div>
           </form>
+          <img
+            className={styles.car}
+            style={{ marginTop: "82px" }}
+            src={truck}
+            alt="truck"
+          />
+          <img
+            className={styles.car}
+            style={{ marginTop: "63px", marginLeft: "700px" }}
+            src={redCar}
+            alt="red"
+          />
+          <img
+            className={styles.car}
+            style={{ marginTop: "98px", marginLeft: "1300px" }}
+            src={pinkCar}
+            alt="pink"
+          />
         </div>
+
         <div className={styles.footer}>
           <div
             style={{
