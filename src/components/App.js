@@ -15,6 +15,7 @@ import ccSS from "../assets/ccSS.png";
 import inclusifySS from "../assets/inclusifySS.png";
 import scSS from "../assets/scSS.png";
 import Project from "./Project";
+import staticGround from "../assets/staticGround.png";
 // import balloon from "../assets/Balloon.png";
 // import truck from "../assets/truck.png";
 // import redCar from "../assets/redCar.png";
@@ -126,9 +127,8 @@ function App() {
                 target="_blank"
                 style={{ color: "#ffffff" }}
               >
-                Tiny Desk Concerts
+                Tiny Desk Concerts.
               </a>
-              .
               <br />
               <br />
               Some technologies that I work with often are:
@@ -197,19 +197,29 @@ function App() {
           <button>Take a copy of my resume!</button>
         </a>
       </div>
-      {/* <div className={styles.contactFooterWrapper}>
+      <div className={styles.contactFooterWrapper}>
         <div className={styles.contact}>
           <h1>Or... we could get in touch!</h1>
-          <img className={styles.balloon} src={balloon} alt="balloon" />
+          {/* <img className={styles.balloon} src={balloon} alt="balloon" /> */}
           <form>
             <div className={styles.input}>
-              <input type="text" id="name" placeholder="Your name," />
-              <input type="email" id="email" placeholder="email, and" />
+              <input
+                type="text"
+                id="uniqueName"
+                placeholder="Your name,"
+                autoComplete="nope"
+              />
+              <input
+                type="email"
+                id="uniqueEmail"
+                placeholder="email, and"
+                autoComplete="nope"
+              />
               <textarea id="message" placeholder="a message." />
               <input type="submit" value="Send" />
             </div>
           </form>
-          <img
+          {/* <img
             className={styles.car}
             style={{ marginTop: "82px" }}
             src={truck}
@@ -226,10 +236,12 @@ function App() {
             style={{ marginTop: "98px", marginLeft: "1300px" }}
             src={pinkCar}
             alt="pink"
-          />
+          /> */}
         </div>
-
-        <div className={styles.footer}>
+      </div>
+      <div className={styles.footer}>
+        <img className={styles.staticGround} src={staticGround} alt="ground" />
+        <div className={styles.footerContent}>
           <div
             style={{
               fontWeight: 400,
@@ -247,7 +259,6 @@ function App() {
             >
               LinkedIn
             </a>
-            <br></br>
             <a
               href="http://github.com/udyding"
               rel="noopener noreferrer"
@@ -255,7 +266,6 @@ function App() {
             >
               Github
             </a>
-            <br></br>
             <a
               href="https://devpost.com/udyding"
               rel="noopener noreferrer"
@@ -265,7 +275,7 @@ function App() {
             </a>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
