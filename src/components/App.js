@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./App.module.css";
 import picture from "../assets/Picture.png";
-import photo from "../assets/Photo.png";
+import portrait from "../assets/Portrait.png";
 import Skill from "./Skill";
-import javascriptIcon from "../assets/Javascript.png";
-import pythonIcon from "../assets/Python.png";
-import reactIcon from "../assets/React.png";
-import apiIcon from "../assets/Api.png";
+// import javascriptIcon from "../assets/Javascript.png";
+// import pythonIcon from "../assets/Python.png";
+// import reactIcon from "../assets/React.png";
+// import apiIcon from "../assets/Api.png";
 import campusCooks from "../assets/CampusCooks.png";
 import inclusify from "../assets/Inclusify.png";
 import sousChef from "../assets/SousChef.png";
@@ -15,17 +15,17 @@ import ccSS from "../assets/ccSS.png";
 import inclusifySS from "../assets/inclusifySS.png";
 import scSS from "../assets/scSS.png";
 import Project from "./Project";
-import balloon from "../assets/Balloon.png";
-import truck from "../assets/truck.png";
-import redCar from "../assets/redCar.png";
-import pinkCar from "../assets/pinkCar.png";
+// import balloon from "../assets/Balloon.png";
+// import truck from "../assets/truck.png";
+// import redCar from "../assets/redCar.png";
+// import pinkCar from "../assets/pinkCar.png";
 
 function App() {
   let skills = [
-    { name: "Javascript", icon: javascriptIcon },
-    { name: "Python", icon: pythonIcon },
-    { name: "React", icon: reactIcon },
-    { name: "APIs", icon: apiIcon },
+    { name: "Javascript ES6" },
+    { name: "Python" },
+    { name: "React" },
+    { name: "APIs" },
   ];
   let projects = [
     {
@@ -35,6 +35,7 @@ function App() {
       tools: ["Express", "NodeJS", "MongoDB", "React", "Firebase"],
       icon: campusCooks,
       link: "https://campus-cooks.netlify.app/",
+      github: "https://github.com/udyding/campus-cooks",
       pic: ccSS,
     },
     {
@@ -44,6 +45,7 @@ function App() {
       tools: ["NodeJS", "React", "Figma", "MaterialUI"],
       icon: inclusify,
       link: "https://inclusifyapp.herokuapp.com/",
+      github: "https://github.com/udyding/inclusify",
       pic: inclusifySS,
     },
     {
@@ -53,6 +55,7 @@ function App() {
       tools: ["Express", "NodeJS", "Spoonacular API", "Bootstrap"],
       icon: sousChef,
       link: "https://sous-chef-website.herokuapp.com/",
+      github: "https://github.com/udyding/sous-chef",
       pic: scSS,
     },
   ];
@@ -64,91 +67,106 @@ function App() {
           <div>
             <h1
               style={{
-                fontWeight: "500",
-                color: "#3E4E50",
-                fontSize: "4.1vw",
+                fontWeight: "normal",
+                color: "#F5E09C",
+                fontSize: "24px",
                 marginBottom: "20px",
               }}
             >
-              Hey! I'm Udy Ding.
+              Hey there! I'm
+            </h1>
+            <h1
+              style={{
+                fontWeight: "500",
+                color: "#ffffff",
+                fontSize: "100px",
+                marginBottom: "20px",
+              }}
+            >
+              Udy Ding.
             </h1>
             <h3
-              style={{ fontWeight: "400", color: "#9B6A6C", fontSize: "1.6vw" }}
+              style={{
+                fontWeight: "normal",
+                color: "#F5E09C",
+                fontSize: "24px",
+                marginBottom: "20px",
+                maxWidth: "500px",
+              }}
             >
-              I'm a Toronto-based software developer.
+              I’m a software developer based in Toronto. Currently, I’m a CS
+              student at UWaterloo and an incoming SWE Intern at OpenText.
             </h3>
+            <button className={styles.coolButton}>Contact me!</button>
           </div>
         </div>
-        <img className={styles.picture} src={picture} alt="myself" />
+        <img className={styles.picture} src={picture} alt="spacesuit" />
       </div>
       <div className={styles.intro}>
+        <img className={styles.portrait} src={portrait} alt="myself" />
         <div className={styles.introContent}>
-          <div className={styles.subtitle}>A little bit about me...</div>
-          <div className={styles.aboutMe}>
-            I love software because it allows me to create interesting solutions
-            to everyday problems. What I was once only able to do by holding
-            small events in my community, I can now translate to interactive web
-            tools that anyone can use.
-            <br />
-            <br />
-            Currently, I’m a Computer Science Student at UWaterloo and an
-            incoming Full Stack Dev at OpenText! In my free time, I love
-            experimenting with food, playing Minecraft, and listening to{" "}
-            <a
-              href="https://www.youtube.com/watch?v=hxxcEzM8r-4"
-              rel="noopener noreferrer"
-              target="_blank"
-              style={{ color: "#3E4E50" }}
-            >
-              Tiny Desk Concerts
-            </a>
-            .
+          <div>
+            <div className={styles.subtitle}>
+              A little bit about me first...
+            </div>
+            <div className={styles.aboutMe}>
+              I love software because it allows me to create interesting
+              solutions to everyday problems. What I was once only able to do by
+              holding small events in my community, I can now translate to
+              interactive web tools that anyone can use.
+              <br />
+              <br />
+              The projects that I’m most proud of making are those that immerse
+              me in lifelong passions and introduce me to new ideas. In my free
+              time, I love experimenting with food, playing Minecraft, and
+              listening to{" "}
+              <a
+                href="https://www.youtube.com/watch?v=hxxcEzM8r-4"
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ color: "#ffffff" }}
+              >
+                Tiny Desk Concerts
+              </a>
+              .
+              <br />
+              <br />
+              Some technologies that I work with often are:
+            </div>
+            <div className={styles.skillsContainer}>
+              <Container>
+                <Row
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  {skills.map((skill, i) => {
+                    return (
+                      <div>
+                        <Col md={3}>
+                          <Skill text={skills[i].name} />
+                        </Col>
+                      </div>
+                    );
+                  })}
+                </Row>
+              </Container>
+            </div>
           </div>
         </div>
-        <img className={styles.photo} src={photo} alt="myself in ithaca" />
       </div>
-      <div className={styles.skills}>
+      <div className={styles.projects}>
         <h1
           style={{
             fontWeight: "500",
-            color: "#3E4E50",
+            color: "#ffffff",
             fontSize: "36px",
-            marginBottom: "40px",
-          }}
-        >
-          Some of my skills...
-        </h1>
-        <Container>
-          <Row
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            {skills.map((skill, i) => {
-              return (
-                <div>
-                  <Col md={3}>
-                    <Skill text={skills[i].name} picture={skills[i].icon} />
-                  </Col>
-                </div>
-              );
-            })}
-          </Row>
-        </Container>
-      </div>
-      <div>
-        <h1
-          style={{
-            fontWeight: "500",
-            color: "#3E4E50",
-            fontSize: "36px",
-            marginBottom: "70px",
+            marginBottom: "100px",
             textAlign: "center",
+            marginTop: "400px",
           }}
         >
-          And here's some stuff I've been working on...
+          And some stuff I've been working on...
         </h1>
         <Container>
           {projects.map((project, i) => {
@@ -160,6 +178,7 @@ function App() {
                   tools={projects[i].tools}
                   icon={projects[i].icon}
                   link={projects[i].link}
+                  github={projects[i].github}
                   pic={projects[i].pic}
                   index={i}
                 />
@@ -178,7 +197,7 @@ function App() {
           <button>Take a copy of my resume!</button>
         </a>
       </div>
-      <div className={styles.contactFooterWrapper}>
+      {/* <div className={styles.contactFooterWrapper}>
         <div className={styles.contact}>
           <h1>Or... we could get in touch!</h1>
           <img className={styles.balloon} src={balloon} alt="balloon" />
@@ -246,7 +265,7 @@ function App() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

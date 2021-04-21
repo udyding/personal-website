@@ -1,6 +1,6 @@
 .container {
-  background-image: url("../assets/Background.png");
-  background-size: 231px 231px;
+  background: url("../assets/Space.png");
+  /* background-size: 231px 231px; */
   background-repeat: repeat;
   background-attachment: fixed;
   width: 100vw;
@@ -8,7 +8,28 @@
 
 .picture {
   position: absolute;
-  width: 100%;
+  margin-top: 10%;
+  margin-left: 45%;
+  width: 625px;
+  transform: rotate(6.75deg);
+  animation: floating 3s ease-in-out infinite;
+  /* filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.25)); */
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .greeting {
@@ -23,43 +44,72 @@
 .greetingContent {
   display: flex;
   align-items: center;
-  margin-left: 7%;
+  margin-left: 15%;
+  margin-top: -5%;
+}
+
+.coolButton {
+  width: 172px;
+  height: 44px;
+  background: #383838;
+  border-radius: 30px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  filter: contrast(120%);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25);
+  margin-top: 15px;
+}
+
+.coolButton:hover {
+  box-shadow: 0px 0px 13px 7px rgba(255, 255, 255, 0.25);
 }
 
 .intro {
   position: relative;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   display: flex;
   height: 100vh;
   width: 100%;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+  gap: 50px;
 }
 
 .introContent {
+  display: flex;
   align-items: center;
-  margin-left: 47%;
-  margin-top: -30vh;
-  z-index: 1;
+  max-width: 600px;
+  /* margin-left: 47%;
+  margin-top: -30vh; */
+  /* z-index: 1; */
 }
 
-.photo {
-  position: absolute;
-  width: 100%;
+.portrait {
+  /* position: absolute; */
+  width: 333px;
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25);
+  border-radius: 80px;
 }
 
 .subtitle {
   font-weight: 500;
-  color: #3e4e50;
-  font-size: 1.6vw;
+  color: #ffffff;
+  font-size: 36px;
   margin-bottom: 20px;
   width: 100%;
 }
 
 .aboutMe {
   font-weight: 400;
-  color: #3e4e50;
-  font-size: 1.1vw;
+  color: #ffffff;
+  font-size: 22px;
   width: 32vw;
 }
 
@@ -76,16 +126,16 @@
 
 .resume > h1 {
   font-weight: 400;
-  font-size: 42px;
-  line-height: 50px;
-  color: #3e4e50;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
 .resume > a > button {
   width: 387px;
   height: 68px;
-  background: #9b6a6c;
+  background: #f5e09c;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   border: none;
@@ -94,16 +144,16 @@
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #ffffff;
+  color: #3e4e50;
   cursor: pointer;
 }
 
 .resume > a > button:hover {
-  background: #8a5d5f;
+  background: #e0cb84;
 }
 
 .contactFooterWrapper {
-  background-image: url(../assets/staticGround.png);
+  /* background-image: url(../assets/staticGround.png); */
   padding-bottom: 36px;
 }
 

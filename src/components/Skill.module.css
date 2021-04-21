@@ -1,15 +1,17 @@
-.picture {
-  margin-left: auto;
-  margin-right: auto;
+.box {
+  background: #f5e09c;
+  padding: 8px 15px 8px 15px;
+  border-radius: 23px;
+  box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.25);
+  cursor: default;
 }
 
-.circle {
-  height: 108px;
-  width: 108px;
-  background-color: #ffebdb;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 21px;
+.box:hover {
+  box-shadow: 0px 0px 10px 7px rgba(255, 255, 255, 0.25);
+}
+
+.technology {
+  font-weight: 500;
+  font-size: 20px;
+  color: #3e4e50;
 }
