@@ -1,0 +1,63 @@
+.picture {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 45%;
+  width: 700px;
+  transform: rotate(6.75deg);
+  animation: floating 3s ease-in-out infinite;
+  /* filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.25)); */
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.greeting {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.greetingContent {
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: -5%;
+}
+
+.coolButton {
+  width: 172px;
+  height: 44px;
+  background: #383838;
+  border-radius: 30px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  filter: contrast(120%);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25);
+  margin-top: 15px;
+}
+
+.coolButton:hover {
+  box-shadow: 0px 0px 13px 7px rgba(255, 255, 255, 0.25);
+}
