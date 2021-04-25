@@ -21,7 +21,7 @@ export default function Greeting() {
             style={{
               fontWeight: "500",
               color: "#ffffff",
-              fontSize: "100px",
+              fontSize: "90px",
               marginBottom: "20px",
             }}
           >
@@ -39,7 +39,9 @@ export default function Greeting() {
             I’m a software developer based in Toronto. Currently, I’m a CS
             student at UWaterloo and an incoming SWE Intern at OpenText.
           </h3>
-          <button className={styles.coolButton}>Contact me!</button>
+          <a href="#contact">
+            <button className={styles.coolButton}>Contact me!</button>
+          </a>
         </div>
       </div>
       <img className={styles.picture} src={picture} alt="spacesuit" />

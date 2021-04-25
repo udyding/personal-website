@@ -25,24 +25,6 @@ export default function Contact() {
             <input type="submit" value="Send" />
           </div>
         </form>
-        {/* <img
-            className={styles.car}
-            style={{ marginTop: "82px" }}
-            src={truck}
-            alt="truck"
-          />
-          <img
-            className={styles.car}
-            style={{ marginTop: "63px", marginLeft: "700px" }}
-            src={redCar}
-            alt="red"
-          />
-          <img
-            className={styles.car}
-            style={{ marginTop: "98px", marginLeft: "1300px" }}
-            src={pinkCar}
-            alt="pink"
-          /> */}
       </div>
     </div>
   );
