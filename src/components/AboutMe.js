@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./AboutMe.module.css";
-import { Container, Row, Col } from "react-bootstrap";
 import Skill from "./Skill";
 import portrait from "../assets/Portrait.png";
 

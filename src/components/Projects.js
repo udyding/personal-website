@@ -1,6 +1,6 @@
 import React from "react";
+import styles from "./Projects.module.css";
 import Project from "./Project";
-import { Container, Row, Col } from "react-bootstrap";
 import campusCooks from "../assets/CampusCooks.png";
 import inclusify from "../assets/Inclusify.png";
 import sousChef from "../assets/SousChef.png";
@@ -42,37 +42,24 @@ export default function Projects() {
     },
   ];
   return (
-    <div>
-      <h1
-        style={{
-          fontWeight: "500",
-          color: "#ffffff",
-          fontSize: "36px",
-          marginBottom: "100px",
-          textAlign: "center",
-          marginTop: "200px",
-        }}
-      >
-        And some stuff I've been working on...
-      </h1>
-      <Container>
+    <div className={styles.projects_container}>
+      <h1 className={styles.title}>And some stuff I've been working on...</h1>
+      <div className={styles.projects}>
         {projects.map((project, i) => {
           return (
-            <div>
-              <Project
-                name={projects[i].name}
-                description={projects[i].description}
-                tools={projects[i].tools}
-                icon={projects[i].icon}
-                link={projects[i].link}
-                github={projects[i].github}
-                pic={projects[i].pic}
-                index={i}
-              />
-            </div>
+            <Project
+              name={projects[i].name}
+              description={projects[i].description}
+              tools={projects[i].tools}
+              icon={projects[i].icon}
+              link={projects[i].link}
+              github={projects[i].github}
+              pic={projects[i].pic}
+              index={i}
+            />
           );
         })}
-      </Container>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.title {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 100px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+}

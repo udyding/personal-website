@@ -62,9 +62,10 @@
   }
 
   /* Self image */
-  .intro > img {
+  .portrait {
     order: 2;
-    width: 75%;
+    width: 264px;
+    border-radius: 60px;
   }
 
   /* Description */
