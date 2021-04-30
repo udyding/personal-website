@@ -13,8 +13,15 @@ code {
     monospace;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
-  scroll-behavior: smooth;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }

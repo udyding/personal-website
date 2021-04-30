@@ -22,9 +22,9 @@ export default function Footer() {
             color: "#3E4E50",
           }}
         >
-          Designed and developed by Udy Ding © 2021
+          Designed and developed by Udy Ding
         </div>
-        <div className={styles.links}>
+        {/* <div className={styles.links}>
           <a
             href="https://ca.linkedin.com/in/udy-ding"
             rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export default function Footer() {
           >
             Devpost
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

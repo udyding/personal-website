@@ -15,7 +15,7 @@
   align-items: flex-end;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 7vw 2vh 7vw;
+  padding: 0 15vw 2vh 7vw;
 }
 
 .footer > h1 {
@@ -28,7 +28,7 @@
   /* margin-bottom: -15px; */
   left: 0;
   bottom: 0;
-  width: 1440px;
+  width: 100vw;
   filter: drop-shadow(0px 0px 125px rgba(39, 11, 141, 0.5));
   position: absolute;
   object-fit: cover;
@@ -36,7 +36,7 @@
 }
 
 .toTop {
-  margin-left: 750px;
+  margin-left: 620px;
   padding-bottom: 60px;
   position: relative;
   z-index: 9999;
@@ -52,7 +52,7 @@
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
 }
 
-h3 {
+footer h3 {
   font-size: 15px;
   color: #726e6e;
   font-weight: normal;

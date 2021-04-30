@@ -6,7 +6,7 @@ import portrait from "../assets/Portrait.png";
 
 export default function AboutMe() {
   let skills = [
-    { name: "Javascript ES6" },
+    { name: "JavaScript" },
     { name: "Python" },
     { name: "React" },
     { name: "APIs" },
@@ -40,24 +40,34 @@ export default function AboutMe() {
             Some technologies that I work with often are:
           </div>
           <div className={styles.skillsContainer}>
-            <Container>
-              <Row
-                style={{
-                  display: "flex",
-                }}
-              >
-                {skills.map((skill, i) => {
-                  return (
-                    <div>
-                      <Col md={3}>
-                        <Skill text={skills[i].name} />
-                      </Col>
-                    </div>
-                  );
-                })}
-              </Row>
-            </Container>
+            {skills.map((skill, i) => {
+              return (
+                <div>
+                  {/* <Col md={3}> */}
+                  <Skill text={skills[i].name} />
+                  {/* </Col> */}
+                </div>
+              );
+            })}
           </div>
+          {/* <div className={styles.skillsContainer}>
+            <Row
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+              }}
+            >
+              {skills.map((skill, i) => {
+                return (
+                  <div>
+                    {/* <Col md={3}> */}
+          {/* <Skill text={skills[i].name} />
+                    </Col>
+                  </div>
+                );
+              })}
+            </Row>
+          </div>  */}
         </div>
       </div>
     </div>

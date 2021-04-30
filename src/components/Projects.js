@@ -50,7 +50,7 @@ export default function Projects() {
           fontSize: "36px",
           marginBottom: "100px",
           textAlign: "center",
-          marginTop: "400px",
+          marginTop: "200px",
         }}
       >
         And some stuff I've been working on...
