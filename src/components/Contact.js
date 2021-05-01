@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import styles from "./Contact.module.css";
 import Media from "./Media.js";
 import gmailIcon from "../assets/Gmail.png";

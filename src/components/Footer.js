@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 import staticGround from "../assets/staticGround.svg";
 import rocket from "../assets/Rocket.png";
+import logo from "../assets/Logo.png";
 
 export default function Footer() {
   return (
@@ -13,8 +14,12 @@ export default function Footer() {
         </a>
         <h3>Back to Top</h3>
       </div>
-
-      <div className={styles.signature}>Designed and developed by Udy Ding</div>
+      <div>
+        <div className={styles.signature}>
+          <img className={styles.logo} src={logo} />
+          Designed and developed by Udy Ding
+        </div>
+      </div>
     </div>
   );
 }
