@@ -36,38 +36,30 @@ export default function Contact() {
     },
   ];
   return (
-    <div className={styles.contactFooterWrapper}>
-      <div className={styles.contact}>
-        <h1>Or... we could get in touch!</h1>
-        <h3 className={styles.description}>
-          Currently, I'm looking for Winter 2022 opportunities! Please feel free
-          to reach out - I'd love to chat!
-        </h3>
-        <div className={styles.mediaWrapper}>
-          <Row
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            {contacts.map((contact, i) => {
-              return (
-                <div>
-                  <Col md={3}>
-                    <Media
-                      title={contacts[i].title}
-                      link={contacts[i].link}
-                      text={contacts[i].text}
-                      logo={contacts[i].logo}
-                    />
-                  </Col>
-                </div>
-              );
-            })}
-          </Row>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.text}>
+          <h1>Or... we could get in touch!</h1>
+          <h3 className={styles.description}>
+            Currently, I'm looking for Winter 2022 opportunities! Please feel
+            free to reach out - I'd love to chat!
+          </h3>
         </div>
-        {/* <form>
+        <div className={styles.mediaWrapper}>
+          {contacts.map((contact, i) => {
+            return (
+              <Media
+                title={contacts[i].title}
+                link={contacts[i].link}
+                text={contacts[i].text}
+                logo={contacts[i].logo}
+              />
+            );
+          })}
+        </div>
+      </div>
+
+      {/* <form>
           <div className={styles.input}>
             <input
               type="text"
@@ -85,7 +77,6 @@ export default function Contact() {
             <input type="submit" value="Send" />
           </div>
         </form> */}
-      </div>
     </div>
   );
 }

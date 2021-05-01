@@ -14,40 +14,7 @@ export default function Footer() {
         <h3>Back to Top</h3>
       </div>
 
-      <div className={styles.footerContent}>
-        <div
-          style={{
-            fontWeight: 400,
-            fontSize: "16px",
-            color: "#3E4E50",
-          }}
-        >
-          Designed and developed by Udy Ding
-        </div>
-        {/* <div className={styles.links}>
-          <a
-            href="https://ca.linkedin.com/in/udy-ding"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="http://github.com/udyding"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a
-            href="https://devpost.com/udyding"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Devpost
-          </a>
-        </div> */}
-      </div>
+      <div className={styles.signature}>Designed and developed by Udy Ding</div>
     </div>
   );
 }

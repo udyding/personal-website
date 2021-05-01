@@ -110,6 +110,7 @@ li {
 @media only screen and (max-width: 600px) {
   .container {
     height: auto;
+    margin-bottom: 100px;
   }
 
   .container h1 {

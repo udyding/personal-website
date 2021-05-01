@@ -1,5 +1,5 @@
 .container {
-  display: inline-block;
+  /* display: inline-block; */
   background: url("../assets/Space.png");
   /* background-size: 231px 231px; */
   background-repeat: repeat;
@@ -8,5 +8,6 @@
   /* min-width: 400px; */
   overflow-x: hidden;
   box-sizing: border-box;
-  padding: 12px;
+  padding: 16px;
+  margin: 0;
 }

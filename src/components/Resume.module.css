@@ -30,3 +30,15 @@
 .resume > a > button:hover {
   background: #e0cb84;
 }
+
+@media only screen and (max-width: 600px) {
+  .resume > h1 {
+    font-size: 24px;
+  }
+
+  .resume > a > button {
+    width: 240px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
