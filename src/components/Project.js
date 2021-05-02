@@ -27,7 +27,7 @@ export default function Project(props) {
             ))}
           </ul>
         </div>
-        <div className={styles.links} style={{ position: "absolute" }}>
+        <div className={styles.links}>
           <a href={link} rel="noopener noreferrer" target="_blank">
             <img src={linkIcon} alt="link" />
           </a>
