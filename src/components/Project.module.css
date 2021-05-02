@@ -15,8 +15,8 @@
   max-width: 816px;
   height: 437px;
   margin: 0 auto 169px;
-
-  filter: drop-shadow(0px 0px 20px #eee2b7);
+  border: 3px solid #f5e09c;
+  /* filter: drop-shadow(0px 0px 20px #eee2b7); */
   border-radius: 48px;
   background-size: cover;
   background-repeat: no-repeat;

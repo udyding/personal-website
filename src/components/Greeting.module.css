@@ -22,6 +22,7 @@
 
 .greeting {
   /* position: relative; */
+  /* padding: 16px 0; */
   display: flex;
   height: 100vh;
   width: 100%;
@@ -88,6 +89,12 @@
 
   .description {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 941px) {
+  .greeting {
+    height: auto;
   }
 }
 

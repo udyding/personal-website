@@ -5,7 +5,7 @@ import picture from "../assets/Picture.png";
 export default function Greeting() {
   return (
     <div className={styles.greeting}>
-      <div>
+      <div style={{ marginBottom: "25px" }}>
         <h1 className={styles.description}>Hey there! I'm</h1>
         <h1 className={styles.title}>Udy Ding.</h1>
         <h1 className={styles.description} style={{ maxWidth: "500px" }}>
