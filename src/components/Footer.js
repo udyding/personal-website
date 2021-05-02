@@ -9,7 +9,7 @@ export default function Footer() {
     <div className={styles.footer}>
       <img className={styles.staticGround} src={staticGround} alt="ground" />
       <div className={styles.toTop}>
-        <a href="#">
+        <a href="/#">
           <img className={styles.rocket} src={rocket} alt="rocket" />
         </a>
         <h3>Back to Top</h3>
