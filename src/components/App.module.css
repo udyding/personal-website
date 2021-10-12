@@ -1,13 +1,19 @@
 .container {
   /* display: inline-block; */
-  background: url("../assets/Space.png");
-  /* background-size: 231px 231px; */
+  background: url("../assets/Stars.jpg");
+  /* background-color: #05081b; */
+  background-size: 700px 700px;
   background-repeat: repeat;
   background-attachment: fixed;
   width: 100%;
   /* min-width: 400px; */
-  overflow-x: hidden;
+  overflow: hidden;
   box-sizing: border-box;
-  padding: 16px;
+  /* padding: 16px; */
   margin: 0;
+  /* background-color:black; */
+}
+
+body {
+  background: transparent;
 }
