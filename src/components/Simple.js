@@ -36,7 +36,7 @@ export default function Simple() {
           </div>
           <div className={styles.resume}>
             <a
-              href="Udy Ding Resume Fall 2021.pdf"
+              href="Udy Ding Resume Summer 2022.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
