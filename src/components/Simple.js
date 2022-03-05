@@ -36,7 +36,7 @@ export default function Simple() {
           </div>
           <div className={styles.resume}>
             <a
-              href="Udy Ding Resume Summer 2022.pdf"
+              href="Udy Ding Resume Summer 2022 Updated.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,8 +50,7 @@ export default function Simple() {
       <div className={styles.content}>
         <div className={styles.title}>Hi there! I'm Udy.</div>
         <div className={styles.description}>
-          I’m a computer science student at UWaterloo and an incoming SWE intern
-          at{" "}
+          I’m a computer science student at UWaterloo and SWE intern at{" "}
           <a
             href="https://www.wish.com/companyinfo?hide_login_modal=true"
             rel="noopener noreferrer"
@@ -64,7 +63,8 @@ export default function Simple() {
           >
             Wish
           </a>
-          . Previously, I interned at OpenText working on their{" "}
+          , where I'm working on Wish Assistant, a post-purchase customer
+          experience tool. Previously, I interned at OpenText working on their{" "}
           <a
             href="https://www.opentext.com/products-and-solutions/products/opentext-core-share"
             rel="noopener noreferrer"
@@ -77,7 +77,7 @@ export default function Simple() {
           >
             Core Share
           </a>{" "}
-          software.
+          office collaboration software.
           <br />
           <br />
           Programming is my outlet for creating interesting solutions to
@@ -85,7 +85,7 @@ export default function Simple() {
           locally, I can now translate to apps anyone can access.
           <br />
           <br />
-          Some things I am currently working on are: mastering dorm cooking,
+          Some things I am currently working on are: exploring home cooking,
           learning new tech, and getting a pet hedgehog.
           <br />
           <br />
