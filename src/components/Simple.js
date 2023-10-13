@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./Simple.module.css";
-import portrait from "../assets/Portrait.jpg";
-import emailIcon from "../assets/contact/Email.png";
-import githubIcon from "../assets/contact/Github.png";
-import linkedinIcon from "../assets/contact/LinkedIn.png";
+import portrait from "../assets/Portrait.png";
 
 export default function Simple() {
   return (
@@ -13,86 +10,93 @@ export default function Simple() {
         <div className={styles.contact}>
           <div className={styles.media}>
             <a
-              href="mailto:udy.ding@gmail.com"
-              rel="noopener noreferrer"
+              href="Udy_Ding_Resume_10:23 copy.pdf"
               target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+              }}
             >
-              <img src={emailIcon} alt="email" />
+              <button>Resume</button>
             </a>
             <a
-              href="https://www.linkedin.com/in/udy-ding/"
+              href="https://www.linkedin.com/in/udyding/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src={linkedinIcon} alt="linkedin" />
+              <button>LinkedIn</button>
             </a>
             <a
               href="http://github.com/udyding"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src={githubIcon} alt="github" />
+              <button>Github</button>
             </a>
           </div>
-          <div className={styles.resume}>
-            <a
-              href="Udy Ding Resume Summer 2022 Updated.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>Resume</button>
-            </a>
-          </div>
-
-          <div className={styles.resume}></div>
         </div>
       </div>
       <div className={styles.content}>
-        <div className={styles.title}>Hi there! I'm Udy.</div>
+        <div className={styles.title}>
+          <p>
+            🌊 <a>Hey! I'm Udy.</a>
+          </p>
+        </div>
         <div className={styles.description}>
-          I’m a computer science student at UWaterloo and SWE intern at{" "}
+          I’m a 3rd year CS student at UWaterloo and an incoming backend
+          engineer intern at{" "}
+          <a
+            href="https://about.twitter.com/en"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Twitter
+          </a>
+          . In the past, I've worked at{" "}
+          <a
+            href="https://www.newfront.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Newfront
+          </a>
+          ,{" "}
+          <a
+            href="https://www.athelas.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Athelas
+          </a>
+          , and{" "}
           <a
             href="https://www.wish.com/companyinfo?hide_login_modal=true"
             rel="noopener noreferrer"
             target="_blank"
-            style={{
-              fontWeight: "800",
-              color: "#ffffff",
-              textDecoration: "none",
-            }}
           >
             Wish
           </a>
-          , where I'm working on Wish Assistant, a post-purchase customer
-          experience tool. Previously, I interned at OpenText working on their{" "}
+          .
+          <br />
+          <br />
+          Programming is my medium for building interesting solutions to
+          everyday problems. I'm currently learning more about big data, AI/ML,
+          and distributed systems. On the side, I love home cooking, trivia
+          nights, and browsing small shops in new cities!
+          <br />
+          <br />
+          <span style={{ fontWeight: "400" }}>
+            I'm currently looking for Summer and Fall 2024 opportunities.
+          </span>{" "}
+          Feel free to reach out for a chat at{" "}
           <a
-            href="https://www.opentext.com/products-and-solutions/products/opentext-core-share"
+            href="mailto:udy.ding@gmail.com"
             rel="noopener noreferrer"
             target="_blank"
-            style={{
-              fontWeight: "800",
-              color: "#ffffff",
-              textDecoration: "none",
-            }}
           >
-            Core Share
-          </a>{" "}
-          office collaboration software.
-          <br />
-          <br />
-          Programming is my outlet for creating interesting solutions to
-          everyday problems. What I could once only accomplish by reaching out
-          locally, I can now translate to apps anyone can access.
-          <br />
-          <br />
-          Some things I am currently working on are: exploring home cooking,
-          learning new tech, and getting a pet hedgehog.
-          <br />
-          <br />
-          <span style={{ fontWeight: "800" }}>
-            I am currently looking for Summer and Fall 2022 opportunities!
-          </span>{" "}
-          If you’d like to chat, please feel free to reach out.
+            udy.ding@gmail.com
+          </a>
+          .
         </div>
       </div>
     </div>

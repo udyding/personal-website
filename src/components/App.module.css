@@ -1,12 +1,12 @@
 .container {
   /* display: inline-block; */
-  background: url("../assets/Stars.jpg");
-  /* background-color: #05081b; */
-  background-size: 700px 700px;
+  /* background: linear-gradient(-45deg, #2E2D4E, #b43485, #003552, #233A43, #104C56); */
+  background: #1b1d24;
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
   background-repeat: repeat;
   background-attachment: fixed;
   width: 100%;
-  /* min-width: 400px; */
   overflow: hidden;
   box-sizing: border-box;
   /* padding: 16px; */
@@ -16,4 +16,16 @@
 
 body {
   background: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
